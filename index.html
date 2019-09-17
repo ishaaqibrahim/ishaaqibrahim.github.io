@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ishaaq Ibrahim</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Gochi+Hand|Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="outercontainer">
+    <div class="innercontainer">
+        <h1>Ishaaq Ibrahim</h1>
+
+        <p class = "intro">
+            Welcome! My name is Ishaaq Ibrahim. I am a senior at the University of Maryland, College Park studying Information Science with a focus on Data Science. My expected
+            graduation date is December 2019. I am interested in Software Engineering and Data Science positions and have experience with both. Check out the links below to find out more about me!
+        </p>
+
+        <div class = "buttons">
+            <button onclick="contact()" id="contact"><i class="fas fa-id-card fa-2x" style = "color: white;"></i></button>
+            <button onclick="window.location.href = 'https://github.com/ishaaqibrahim';" id="GitHub" style = "color: white;"><i class="fab fa-github fa-2x"></i></button>
+            <button onclick = "window.open('IshaaqIbrahimResume.pdf', '_blank')" id="resume"><i class="fas fa-file fa-2x" style = "color: white;"></i></button>
+            <button onclick="window.location.href = 'https://www.linkedin.com/in/ishaaq-ibrahim';" id="linkedin" style = "color: white;"><i class="fab fa-linkedin fa-2x"></i></button>
+            <button onclick="window.location.href = 'https://www.instagram.com/ishaaqibrahim/';" id="instagram" style = "color: white;"><i class="fab fa-instagram fa-2x"></i></button>
+            <p id = "contact_info">(301) 661-6556 <br>ishaaqibrahim@gmail.com</p>
+        </div>
+
+        <div class="typewriter">
+            <h3>See more of my photos here</h3>
+        </div>
+
+        <div class="arrow"></div>
+    </div>
+</div>
+
+    <script>
+        function contact() {
+            var x = document.getElementById("contact_info");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
