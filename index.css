@@ -1,0 +1,180 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("IMG_2081.jpg");
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+  }
+
+.outercontainer {
+    height: 100%;
+    width: 100%;
+}
+
+.innercontainer {
+    flex: 1;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 325px;
+    left: 30px;
+    /*top: 30%;
+    left: 5%;*/
+    font-family: 'Playfair Display SC', serif;
+    font-size: 437.5%;
+}
+
+p.intro {
+    text-align: center;
+    position: relative;
+    font-family: 'Arapey', serif;
+    font-size: 156.25%;
+    top: 290px;
+    left: 29%;
+    /*left: 5%;*/
+    width: 45%;
+}
+
+.buttons {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    top: 300px;
+    left: 20px;
+}
+
+#contact_info {
+    display: none;
+    font-size: 40%;
+    position: relative;
+    left: -110px;
+}
+
+#contact {
+    background: black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+#contact:hover {
+    background: lightblue;
+}
+
+#GitHub {
+    background: black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+#GitHub:hover {
+    background: gray;
+}
+
+#resume {
+    background: black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+#resume:hover {
+    background: green;
+}
+
+#linkedin {
+    background: black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+#linkedin:hover {
+    background: #0077B5;
+}
+
+#instagram {
+    background: black;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+}
+#instagram:hover {
+    background: #833AB4;
+}
+
+.typewriter h3 {
+    position: relative;
+    top: 350px;
+    left: 260px;
+    width: 300px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;  /*Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 300px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+div.arrow {
+	width: 1vmin;
+	height: 1vmin;
+	box-sizing: border-box;
+	position: relative;
+    top: 300px;
+    left: 1080px;
+	transform: rotate(-45deg);
+}	
+	div.arrow:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .4vmin .4vmin 0 0;
+		border-style: solid;
+		border-color: #fafafa;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+	}
+
+	
+	div.arrow:after {
+		content: '';
+		float: left;
+		position: relative;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		border-width: 0 .4vmin 0 0;
+		border-style: solid;
+		border-color: #fafafa;
+		transform-origin: 100% 0;
+		transition:.2s ease;
+	}
+	
+	div.arrow:hover::after {
+		transform: rotate(45deg);
+		border-color: orange;
+		height: 120%;
+	}
+	div.arrow:hover::before {
+		border-color: orange;
+		transform: scale(.8);
+		
+	}
